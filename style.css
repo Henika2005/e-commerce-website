@@ -255,6 +255,7 @@ header{
 }
 
 .product-card{
+        position:relative;
     background:#fff;
     border-radius:15px;
     padding:20px;
@@ -567,4 +568,63 @@ footer h3{
 
     box-shadow:0 5px 15px rgba(0,0,0,.08);
 
+}
+.badge{
+
+    position:absolute;
+
+    top:15px;
+    left:15px;
+
+    background:#ff3b3b;
+
+    color:white;
+
+    padding:6px 12px;
+
+    border-radius:20px;
+
+    font-size:12px;
+
+    font-weight:bold;
+}
+
+.category{
+
+    color:#777;
+
+    font-size:15px;
+
+    margin:10px 0;
+}
+
+.rating{
+
+    color:#ffc107;
+
+    font-size:18px;
+
+    margin-bottom:10px;
+}
+
+.price{
+
+    font-size:22px;
+
+    font-weight:bold;
+
+    color:#6d28d9;
+
+    margin-bottom:18px;
+}
+
+.old-price{
+
+    text-decoration:line-through;
+
+    color:#888;
+
+    font-size:16px;
+
+    margin-right:8px;
 }

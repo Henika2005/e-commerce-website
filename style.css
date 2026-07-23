@@ -655,3 +655,145 @@ color:#888;
 font-size:16px;    
 
 margin-right:8px;
+}
+/* ==============================
+   MOBILE VIEW FIX
+============================== */
+
+@media (max-width:768px){
+
+    .navbar{
+        width:95%;
+        flex-direction:column;
+        gap:15px;
+        padding:15px 0;
+    }
+
+    .nav-links{
+        width:100%;
+        justify-content:center;
+        flex-wrap:wrap;
+        gap:12px;
+    }
+
+    .nav-links a{
+        font-size:14px;
+    }
+
+    .nav-icons{
+        font-size:18px;
+        gap:18px;
+    }
+
+    .hero{
+        width:95%;
+        flex-direction:column-reverse;
+        text-align:center;
+        gap:30px;
+        margin:30px auto;
+    }
+
+    .hero-image img{
+        width:100%;
+        max-width:300px;
+    }
+
+    .hero-content h1{
+        font-size:32px;
+    }
+
+    .hero-content h4{
+        font-size:18px;
+    }
+
+    .hero-content p{
+        font-size:15px;
+    }
+
+    .hero-content button{
+        width:100%;
+        max-width:250px;
+    }
+
+    .category-container,
+    .product-container{
+        grid-template-columns:1fr;
+    }
+
+    .product-card{
+        padding:15px;
+    }
+
+    .product-card img{
+        height:180px;
+    }
+
+    .product-card h3{
+        font-size:20px;
+    }
+
+    .price{
+        font-size:20px;
+    }
+
+    .offer-box{
+        padding:40px 20px;
+    }
+
+    .offer-box h3{
+        font-size:28px;
+    }
+
+    .offer-box button{
+        width:100%;
+        max-width:220px;
+    }
+
+    .about p{
+        font-size:16px;
+    }
+
+    .cart{
+        width:95%;
+    }
+
+    .cart-item{
+        padding:15px;
+    }
+
+    .social-icons{
+        flex-wrap:wrap;
+    }
+}
+
+@media (max-width:480px){
+
+    .logo{
+        font-size:22px;
+    }
+
+    .hero-content h1{
+        font-size:26px;
+    }
+
+    .hero-content h4{
+        font-size:16px;
+    }
+
+    .categories h2,
+    .products h2,
+    .offers h2,
+    .about h2,
+    .cart h2{
+        font-size:24px;
+    }
+
+    .badge{
+        font-size:10px;
+        padding:5px 10px;
+    }
+
+    .product-card img{
+        height:160px;
+    }
+}

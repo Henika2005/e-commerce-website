@@ -134,7 +134,7 @@ header{
 
 .hero-content p{
 
-    color:#555;
+    color:#d1d5db;
     font-size:18px;
     margin-bottom:30px;
 }
@@ -208,17 +208,13 @@ header{
 }
 
 .category-card{
-
-    background:#fff;
-
+.category-card{
+    background:#1f2937;
+    color:white;
     padding:35px;
-
     text-align:center;
-
-    border-radius:15px;
-
-    box-shadow:0 8px 25px rgba(0,0,0,.08);
-
+    border-radius:18px;
+    box-shadow:0 8px 20px rgba(0,0,0,.3);
     transition:.3s;
 }
 
@@ -263,13 +259,12 @@ header{
 }
 
 .product-card{
-
     position:relative;
-    background:#fff;
+    background:#1f2937;
     border-radius:20px;
     padding:20px;
     text-align:center;
-    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    box-shadow:0 10px 25px rgba(0,0,0,.4);
     transition:.4s;
     overflow:hidden;
 }
@@ -288,6 +283,7 @@ header{
 }
 
 .product-card h3{
+        color:white;
     margin:18px 0 10px;
     font-size:22px;
 }

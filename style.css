@@ -202,7 +202,7 @@ text-align:center;
 
 }
 .hero-image img{
-
+ animation: float 4s ease-in-out infinite;
     width:100%;
     max-width:430px;
     border-radius:25px;
@@ -223,9 +223,7 @@ text-align:center;
     }
 }
 
-.hero-image img{
-    animation:float 4s ease-in-out infinite;
-}
+
 
 /* ==============================
 CATEGORIES

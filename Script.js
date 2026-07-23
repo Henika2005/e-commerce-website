@@ -93,7 +93,7 @@ wishlistButtons.forEach(button=>{
 // Scroll Animation
 
 const hiddenElements = document.querySelectorAll(
-".hero, .categories, .products, .offers, .about, .reviews, .newsletter, .cart, footer"
+".hero, .categories, .products, .offers, .about, .reviews, .brands, .newsletter, .cart, footer"
 );
 
 const observer = new IntersectionObserver((entries)=>{

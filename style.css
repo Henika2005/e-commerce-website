@@ -20,9 +20,8 @@ html{
 }
 
 body{
-
-    background:linear-gradient(180deg,#f8f9ff,#eef2ff,#ffffff);
-    color:#222;
+    background:linear-gradient(135deg,#0f172a,#111827,#1e293b);
+    color:#ffffff;
 }
 
 /*==============================
@@ -51,10 +50,9 @@ header{
 }
 
 .logo{
-
     font-size:28px;
     font-weight:700;
-    color:#5b21b6;
+    color:#a855f7;
 }
 
 .logo i{
@@ -72,7 +70,7 @@ header{
 .nav-links a{
 
     text-decoration:none;
-    color:#333;
+    color:white;
     font-weight:500;
     transition:.3s;
 }

@@ -90,3 +90,30 @@ wishlistButtons.forEach(button=>{
     });
 
 });
+// Scroll Animation
+
+const hiddenElements = document.querySelectorAll(
+".hero, .categories, .products, .offers, .about, .cart, footer"
+);
+
+const observer = new IntersectionObserver((entries)=>{
+
+    entries.forEach(entry=>{
+
+        if(entry.isIntersecting){
+
+            entry.target.classList.add("show");
+
+        }
+
+    });
+
+});
+
+hiddenElements.forEach(element=>{
+
+    element.classList.add("hidden");
+
+    observer.observe(element);
+
+});

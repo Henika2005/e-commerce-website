@@ -875,3 +875,19 @@ section{
     transform: translateY(-10px) scale(1.03);
     box-shadow: 0 15px 35px rgba(108,99,255,0.35);
 }
+.cart-item button{
+    margin-top:10px;
+    padding:8px 18px;
+    border:none;
+    border-radius:20px;
+    background:#ef4444;
+    color:white;
+    cursor:pointer;
+    font-size:14px;
+    transition:.3s;
+}
+
+.cart-item button:hover{
+    background:#dc2626;
+    transform:scale(1.05);
+}

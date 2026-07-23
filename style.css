@@ -924,3 +924,56 @@ section{
     opacity:1;
     visibility:visible;
 }
+/* ==========================
+   Wishlist
+========================== */
+
+.wishlist{
+
+    position:absolute;
+    top:15px;
+    right:15px;
+
+    width:42px;
+    height:42px;
+
+    background:white;
+
+    border-radius:50%;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    cursor:pointer;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.15);
+
+    transition:.3s;
+}
+
+.wishlist i{
+
+    font-size:20px;
+    color:#888;
+    transition:.3s;
+
+}
+
+.wishlist:hover{
+
+    transform:scale(1.1);
+
+}
+
+.wishlist.active{
+
+    background:#ef4444;
+
+}
+
+.wishlist.active i{
+
+    color:white;
+
+}

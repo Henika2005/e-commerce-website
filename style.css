@@ -87,6 +87,24 @@ transition:.3s;
 color:#6d28d9;
 
 }
+.nav-links a{
+    position:relative;
+}
+
+.nav-links a::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:-5px;
+    width:0;
+    height:2px;
+    background:#6d28d9;
+    transition:.3s;
+}
+
+.nav-links a:hover::after{
+    width:100%;
+}
 
 .nav-icons{
 
@@ -195,6 +213,18 @@ text-align:center;
 .hero-image img:hover{
 
     transform:scale(1.05);
+}
+@keyframes float{
+    0%,100%{
+        transform:translateY(0);
+    }
+    50%{
+        transform:translateY(-15px);
+    }
+}
+
+.hero-image img{
+    animation:float 4s ease-in-out infinite;
 }
 
 /* ==============================

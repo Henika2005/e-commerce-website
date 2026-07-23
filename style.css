@@ -1183,3 +1183,87 @@ section{
     }
 
 }
+/* ==============================
+   BRANDS
+============================== */
+
+.brands{
+
+    width:90%;
+    margin:80px auto;
+    text-align:center;
+
+}
+
+.brands h2{
+
+    font-size:34px;
+    margin-bottom:50px;
+
+}
+
+.brand-container{
+
+    display:grid;
+    grid-template-columns:repeat(6,1fr);
+    gap:20px;
+
+}
+
+.brand-card{
+
+    background:#fff;
+
+    padding:30px 15px;
+
+    border-radius:18px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+    transition:.35s;
+
+}
+
+.brand-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 18px 35px rgba(109,40,217,.2);
+
+}
+
+.brand-card i{
+
+    font-size:45px;
+
+    color:#6d28d9;
+
+    margin-bottom:15px;
+
+}
+
+.brand-card h3{
+
+    font-size:18px;
+
+}
+
+@media(max-width:992px){
+
+    .brand-container{
+
+        grid-template-columns:repeat(3,1fr);
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .brand-container{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}

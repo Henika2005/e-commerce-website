@@ -2,7 +2,15 @@ let cart = [];
 
 function addToCart(name, price){
 
-    cart.push({name,price});
+    cart.push({name, price});
+
+    displayCart();
+
+}
+
+function removeFromCart(index){
+
+    cart.splice(index, 1);
 
     displayCart();
 
@@ -17,7 +25,15 @@ function displayCart(){
 
     let totalPrice = 0;
 
-    cart.forEach(item => {
+    if(cart.length === 0){
+
+        cartItems.innerHTML = "<p>No items in cart.</p>";
+        total.innerHTML = "Total: $0.00";
+        return;
+
+    }
+
+    cart.forEach((item, index)=>{
 
         totalPrice += parseFloat(item.price.replace("$",""));
 
@@ -25,14 +41,11 @@ function displayCart(){
             <div class="cart-item">
                 <h4>${item.name}</h4>
                 <p>${item.price}</p>
+                <button onclick="removeFromCart(${index})">Remove</button>
             </div>
         `;
 
     });
-
-    if(cart.length === 0){
-        cartItems.innerHTML = "<p>No items in cart.</p>";
-    }
 
     total.innerHTML = `Total: $${totalPrice.toFixed(2)}`;
 

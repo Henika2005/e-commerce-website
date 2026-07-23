@@ -170,6 +170,14 @@ header{
 
     width:100%;
     max-width:430px;
+    border-radius:25px;
+    box-shadow:0 20px 40px rgba(0,0,0,.25);
+    transition:.4s;
+}
+
+.hero-image img:hover{
+
+    transform:scale(1.05);
 }
 
 /*==============================
@@ -255,18 +263,21 @@ header{
 }
 
 .product-card{
-        position:relative;
+
+    position:relative;
     background:#fff;
-    border-radius:15px;
+    border-radius:20px;
     padding:20px;
     text-align:center;
-    box-shadow:0 8px 20px rgba(0,0,0,.08);
-    transition:.3s;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.4s;
+    overflow:hidden;
 }
 
 .product-card:hover{
-    transform:translateY(-10px);
-    box-shadow:0 12px 25px rgba(0,0,0,.15);
+
+    transform:translateY(-12px);
+    box-shadow:0 18px 35px rgba(109,40,217,.25);
 }
 
 .product-card img{
@@ -289,14 +300,16 @@ header{
 }
 
 .product-card button{
+
     width:100%;
-    padding:12px;
+    padding:13px;
     border:none;
-    border-radius:8px;
-    background:#6d28d9;
-    color:#fff;
-    cursor:pointer;
+    border-radius:30px;
+    background:linear-gradient(135deg,#6d28d9,#8b5cf6);
+    color:white;
     font-size:16px;
+    font-weight:600;
+    cursor:pointer;
     transition:.3s;
 }
 

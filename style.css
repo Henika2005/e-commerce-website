@@ -19,22 +19,21 @@ scroll-behavior:smooth;
 }
 
 body{
-
-    background:linear-gradient(180deg,#f8f9ff,#eef2ff,#ffffff);
-    color:#222;
+    padding-top: 80px;
 }
 
 /==============================
 NAVBAR
 ==============================/
 
-header{
-width:100%;
-background:#fff;
-position:sticky;
-top:0;
-z-index:1000;
-box-shadow:0 2px 15px rgba(0,0,0,.08);
+.header{
+    position: sticky;   /* or fixed */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background: rgba(15,23,42,0.95);
+    backdrop-filter: blur(10px);
 }
 
 .navbar{
@@ -815,4 +814,34 @@ margin-right:8px;
     .product-card img{
         height:160px;
     }
+}
+/* Section Spacing */
+section{
+    padding: 90px 10%;
+}
+
+.section-title{
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.products,
+.categories,
+.offers,
+.contact{
+    margin-top: 30px;
+}
+.category-card,
+.product-card,
+.offer-card{
+    border-radius: 18px;
+    transition: 0.4s ease;
+    overflow: hidden;
+}
+
+.category-card:hover,
+.product-card:hover,
+.offer-card:hover{
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 15px 35px rgba(108,99,255,0.35);
 }

@@ -6,6 +6,8 @@ function addToCart(name, price){
 
     displayCart();
 
+    showToast();
+
 }
 
 function removeFromCart(index){

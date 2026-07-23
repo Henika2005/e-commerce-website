@@ -380,7 +380,7 @@ header{
     max-width:800px;
     margin:auto;
     line-height:1.8;
-    color:#555;
+    color:#d1d5db;
     font-size:18px;
 }
 /*==============================
@@ -388,13 +388,7 @@ header{
 ==============================*/
 
 footer{
-
-    background:linear-gradient(135deg,#2e1065,#4c1d95);
-    color:white;
-    text-align:center;
-    padding:50px 20px;
-    margin-top:60px;
-}
+    background:#111827;
 
 footer h3{
     font-size:28px;
@@ -573,12 +567,11 @@ footer h3{
 }
 
 .cart-item{
-
-    background:white;
+    background:#1f2937;
+    color:white;
     padding:20px;
     border-radius:15px;
-    box-shadow:0 10px 20px rgba(0,0,0,.08);
-    transition:.3s;
+    box-shadow:0 8px 20px rgba(0,0,0,.3);
 }
 
 .cart-item:hover{

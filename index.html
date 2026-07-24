@@ -45,16 +45,21 @@
 
             </ul>
 
-            <div class="nav-icons">
+          <div class="nav-icons">
 
-                <i class="fa-solid fa-magnifying-glass"></i>
+    <button id="theme-toggle">
+        <i class="fa-solid fa-moon"></i>
+    </button>
 
-                <i class="fa-regular fa-user"></i>
+    <div class="cart-icon">
 
-                <i class="fa-solid fa-cart-shopping"></i>
+        <i class="fa-solid fa-cart-shopping"></i>
 
-            </div>
+        <span id="cart-count">0</span>
 
+    </div>
+
+</div>
         </nav>
 
     </header>
@@ -83,9 +88,12 @@
 
         <div class="hero-image">
 
-            <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800" alt="Headphones">
+    <img
+        id="hero-slider"
+        src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800"
+        alt="Shopping">
 
-        </div>
+</div>
 
     </section>
 
@@ -135,10 +143,29 @@
 
     <!-- ================= PRODUCTS ================= -->
 
-    <section id="products" class="products">
+   <section id="products" class="products">
 
-        <h2>Best Selling Products</h2>
+    <h2>Best Selling Products</h2>
+	
+	<div class="filter-buttons">
 
+    <button onclick="filterProducts('all')">All</button>
+
+    <button onclick="filterProducts('Wearables')">Wearables</button>
+
+    <button onclick="filterProducts('Electronics')">Electronics</button>
+
+    <button onclick="filterProducts('Travel')">Travel</button>
+
+    <button onclick="filterProducts('Fashion')">Fashion</button>
+
+</div>
+
+    <input
+        type="text"
+        id="search"
+        placeholder="🔍 Search products..."
+        onkeyup="searchProducts()">
         <div class="product-container">
 
            <div class="product-card">
@@ -258,6 +285,9 @@
         <div class="offer-box">
 
             <h3>Flat 40% OFF</h3>
+	<div id="countdown">
+    02 : 00 : 00
+</div>
 
             <p>
 
@@ -496,6 +526,9 @@
 
 </footer>
     <div id="toast">✅ Product added to cart!</div>
+	<button id="topBtn" onclick="topFunction()">
+    <i class="fa-solid fa-arrow-up"></i>
+</button>
     <script src="script.js"></script>
 </body>
 

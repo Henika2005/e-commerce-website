@@ -423,3 +423,70 @@ setInterval(()=>{
     },300);
 
 },3000);
+// ==============================
+// Order Confirmation
+// ==============================
+
+function placeOrder(){
+
+    if(cart.length === 0){
+
+        alert("Your cart is empty!");
+
+        return;
+
+    }
+
+    let totalItems = 0;
+    let totalPrice = 0;
+
+    cart.forEach(item=>{
+
+        totalItems += item.quantity;
+        totalPrice += parseFloat(item.price.replace("$","")) * item.quantity;
+
+    });
+
+    let orderId = "SE" + Math.floor(Math.random()*900000 + 100000);
+
+    document.getElementById("order-details").innerHTML = `
+        <strong>Order ID:</strong> ${orderId}<br><br>
+
+        <strong>Total Items:</strong> ${totalItems}<br>
+
+        <strong>Total Amount:</strong> $${totalPrice.toFixed(2)}<br><br>
+
+        Estimated Delivery:
+        <strong>3-5 Business Days</strong>
+    `;
+
+    document.getElementById("order-popup").style.display="flex";
+
+}
+
+function closePopup(){
+
+    document.getElementById("order-popup").style.display = "none";
+
+    closeCart();
+
+    cart = [];
+
+    displayCart();
+
+}
+// ==============================
+// Open / Close Cart
+// ==============================
+
+function openCart(){
+
+    document.getElementById("cart-panel").classList.add("open");
+
+}
+
+function closeCart(){
+
+    document.getElementById("cart-panel").classList.remove("open");
+
+}

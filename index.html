@@ -51,14 +51,13 @@
         <i class="fa-solid fa-moon"></i>
     </button>
 
-    <div class="cart-icon">
+    <div class="cart-icon" onclick="openCart()">
 
-        <i class="fa-solid fa-cart-shopping"></i>
+    <i class="fa-solid fa-cart-shopping"></i>
 
-        <span id="cart-count">0</span>
+    <span id="cart-count">0</span>
 
-    </div>
-
+</div>
 </div>
         </nav>
 
@@ -416,17 +415,25 @@
 
     <!-- ================= CART ================= -->
 
-<section class="cart">
+<section class="cart" id="cart-panel">
 
-    <h2>Shopping Cart</h2>
+    <div class="cart-header">
 
-    <div id="cart-items">
+        <h2>Shopping Cart</h2>
 
-        <p>No items in cart.</p>
+        <span class="close-cart" onclick="closeCart()">&times;</span>
 
     </div>
-    <h3 id="cart-total">Total: $0</h3>
 
+    <div id="cart-items">
+        <p>No items in cart.</p>
+    </div>
+
+    <h3 id="cart-total">Total: $0.00</h3>
+
+    <button id="place-order-btn" onclick="placeOrder()">
+    Place Order
+</button>
 </section>
     <!-- ================= NEWSLETTER ================= -->
 
@@ -526,6 +533,23 @@
 
 </footer>
     <div id="toast">✅ Product added to cart!</div>
+	<div id="order-popup">
+
+    <div class="popup-content">
+
+        <i class="fa-solid fa-circle-check"></i>
+
+        <h2>Order Confirmed!</h2>
+
+        <p id="order-details"></p>
+
+        <button onclick="closePopup()">
+            Continue Shopping
+        </button>
+
+    </div>
+
+</div>
 	<button id="topBtn" onclick="topFunction()">
     <i class="fa-solid fa-arrow-up"></i>
 </button>

@@ -336,6 +336,12 @@ gap:25px;
     box-shadow:0 10px 25px rgba(0,0,0,.08);
     transition:.4s;
     overflow:hidden;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start;
+
+    min-height:580px;
 }
 
 .product-card:hover{
@@ -375,8 +381,9 @@ margin-bottom:18px;
     font-weight:600;
     cursor:pointer;
     transition:.3s;
-}
 
+    margin-top:auto;
+}
 .product-card button:hover{
 
     transform:scale(1.05);
